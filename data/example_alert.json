@@ -1,0 +1,8 @@
+{
+  "id": "lab-00-01",
+  "host": "endpoint-01",
+  "title": "Credential access alert",
+  "description": "A process accessed LSASS memory and wrote a dump. Process context: user1, event series 1.",
+  "source_ip": "192.0.2.2",
+  "category": "execution"
+}

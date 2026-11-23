@@ -1,0 +1,42 @@
+{
+  "192.0.2.7": {
+    "status": "malicious",
+    "source": "synthetic lab reputation snapshot"
+  },
+  "192.0.2.17": {
+    "status": "malicious",
+    "source": "synthetic lab reputation snapshot"
+  },
+  "192.0.2.27": {
+    "status": "malicious",
+    "source": "synthetic lab reputation snapshot"
+  },
+  "192.0.2.37": {
+    "status": "malicious",
+    "source": "synthetic lab reputation snapshot"
+  },
+  "192.0.2.47": {
+    "status": "malicious",
+    "source": "synthetic lab reputation snapshot"
+  },
+  "192.0.2.57": {
+    "status": "malicious",
+    "source": "synthetic lab reputation snapshot"
+  },
+  "192.0.2.67": {
+    "status": "malicious",
+    "source": "synthetic lab reputation snapshot"
+  },
+  "192.0.2.77": {
+    "status": "malicious",
+    "source": "synthetic lab reputation snapshot"
+  },
+  "192.0.2.87": {
+    "status": "malicious",
+    "source": "synthetic lab reputation snapshot"
+  },
+  "192.0.2.97": {
+    "status": "malicious",
+    "source": "synthetic lab reputation snapshot"
+  }
+}

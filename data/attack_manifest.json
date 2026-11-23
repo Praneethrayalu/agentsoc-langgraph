@@ -1,0 +1,8 @@
+{
+  "source_url": "https://raw.githubusercontent.com/mitre-attack/attack-stix-data/master/enterprise-attack/enterprise-attack.json",
+  "sha256": "539a843a7b53ed9749740b2123dddae3726b1a4831841c32aca740b011b910b5",
+  "bundle_id": "bundle--334dd54f-ac9f-4990-9d9e-e51ecfff5430",
+  "technique_count": 706,
+  "latest_object_modified": "2026-11-05T15:11:27.678Z",
+  "embedding": "sklearn HashingVectorizer 2048 dimensions, word 1-2gram; not neural"
+}

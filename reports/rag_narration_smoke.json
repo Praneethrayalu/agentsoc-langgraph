@@ -1,0 +1,49 @@
+{
+  "alert_id": "lab-00-01",
+  "verdict": "malicious",
+  "status": "rejected",
+  "reviewer_note": "Reference smoke test only, no human incident review",
+  "reasons": [
+    "High-confidence indicator in correlated fixture evidence"
+  ],
+  "evidence": {
+    "reputation": {
+      "status": "unknown",
+      "source": "not in offline snapshot"
+    },
+    "logs": [
+      {
+        "host": "endpoint-01",
+        "alert_id": "lab-00-01",
+        "signal": "credential_dump",
+        "source": "synthetic_endpoint",
+        "event_id": 1
+      }
+    ]
+  },
+  "attack_candidates": [
+    {
+      "technique_id": "T1055",
+      "name": "Process Injection",
+      "url": "https://attack.mitre.org/techniques/T1055",
+      "excerpt": "Process Injection\nAdversaries may inject code into processes in order to evade process-based defenses as well as possibly elevate privileges. Process injection is a method of executing arbitrary code in the address space of a separate live process. Running code in the context of another process may allow access to the process's memory, system/network resources, and possibly elevated privileges. Execution via process injection may also evade detection from security products since the execution is masked under a legitimate process. \n\nThere are many different ways to inject code into a process, many of which abuse legitimate functionalities. These implementations exist for every major OS but are typically platform specific. \n\nMore sophisticated samples may perform multiple process injections to segment modules and further evade detection, utilizing named pipes or other inter-process communi",
+      "distance": 0.7456
+    },
+    {
+      "technique_id": "T1564.010",
+      "name": "Process Argument Spoofing",
+      "url": "https://attack.mitre.org/techniques/T1564/010",
+      "excerpt": "Process Argument Spoofing\nAdversaries may attempt to hide process command-line arguments by overwriting process memory. Process command-line arguments are stored in the process environment block (PEB), a data structure used by Windows to store various information about/used by a process. The PEB includes the process command-line arguments that are referenced when executing the process. When a process is created, defensive tools/sensors that monitor process creations may retrieve the process arguments from the PEB.(Citation: Microsoft PEB 2021)(Citation: Xpn Argue Like Cobalt 2019)\n\nAdversaries may manipulate a process PEB to evade defenses. For example, [Process Hollowing](https://attack.mitre.org/techniques/T1055/012) can be abused to spawn a process in a suspended state with benign arguments. After the process is spawned and the PEB is initialized (and process information is potentiall",
+      "distance": 0.7473
+    },
+    {
+      "technique_id": "T1036.011",
+      "name": "Overwrite Process Arguments",
+      "url": "https://attack.mitre.org/techniques/T1036/011",
+      "excerpt": "Overwrite Process Arguments\nAdversaries may modify a process's in-memory arguments to change its name in order to appear as a legitimate or benign process. On Linux, the operating system stores command-line arguments in the process\u2019s stack and passes them to the `main()` function as the `argv` array. The first element, `argv[0]`, typically contains the process name or path - by default, the command used to actually start the process (e.g., `cat /etc/passwd`). By default, the Linux `/proc` filesystem uses this value to represent the process name. The `/proc/<PID>/cmdline` file reflects the contents of this memory, and tools like `ps` use it to display process information. Since arguments are stored in user-space memory at launch, this modification can be performed without elevated privileges. \n\nDuring runtime, adversaries can erase the memory used by all command-line arguments for a proce",
+      "distance": 0.7565
+    }
+  ],
+  "advisory_narrative": "The provided evidence contains a credential access alert with a high confidence indicator in correlated fixture evidence. The alert describes a process context where user1 is involved, and the event series 1 is logged. The process context is a synthetic endpoint, and the event series 1 is logged in the synthetic endpoint. The reputation status is unknown, and the logs contain a credential_dump signal. The attack candidate is Process Injection, which is a method of executing arbitrary code in the address space of a separate live process. The evidence also mentions Process Argument Spoofing, which is a technique that involves overwriting process memory to hide process command-line arguments.",
+  "response_executed": false
+}

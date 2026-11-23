@@ -1,0 +1,125 @@
+1 review review malicious 1.028
+2 malicious malicious malicious 0.623
+3 benign benign malicious 0.612
+4 malicious malicious malicious 0.603
+5 review review malicious 0.612
+6 benign benign malicious 0.634
+7 malicious malicious malicious 0.632
+8 malicious malicious malicious 0.604
+9 review review malicious 0.67
+10 benign benign malicious 0.633
+11 review review malicious 0.637
+12 malicious malicious malicious 0.641
+13 benign benign malicious 0.626
+14 malicious malicious malicious 0.619
+15 review review malicious 0.649
+16 benign benign malicious 0.682
+17 malicious malicious malicious 0.638
+18 malicious malicious malicious 0.61
+19 review review malicious 0.653
+20 benign benign malicious 0.629
+21 review review malicious 0.647
+22 malicious malicious malicious 0.641
+23 benign benign malicious 0.629
+24 malicious malicious malicious 0.629
+25 review review malicious 0.625
+26 benign benign malicious 0.649
+27 malicious malicious malicious 0.64
+28 malicious malicious malicious 0.624
+29 review review malicious 0.651
+30 benign benign malicious 0.62
+31 review review malicious 0.629
+32 malicious malicious malicious 0.66
+33 benign benign malicious 0.631
+34 malicious malicious malicious 0.625
+35 review review malicious 0.621
+36 benign benign malicious 0.628
+37 malicious malicious malicious 0.64
+38 malicious malicious malicious 0.612
+39 review review malicious 0.661
+40 benign benign malicious 0.624
+41 review review malicious 0.632
+42 malicious malicious malicious 0.645
+43 benign benign malicious 0.644
+44 malicious malicious malicious 0.629
+45 review review malicious 0.634
+46 benign benign malicious 0.65
+47 malicious malicious malicious 0.646
+48 malicious malicious malicious 0.618
+49 review review malicious 0.649
+50 benign benign malicious 0.623
+51 review review malicious 0.634
+52 malicious malicious malicious 0.634
+53 benign benign malicious 0.626
+54 malicious malicious malicious 0.62
+55 review review malicious 0.63
+56 benign benign malicious 0.631
+57 malicious malicious malicious 0.633
+58 malicious malicious malicious 0.638
+59 review review malicious 0.666
+60 benign benign malicious 0.635
+61 review review malicious 0.632
+62 malicious malicious malicious 0.634
+63 benign benign malicious 0.687
+64 malicious malicious malicious 0.628
+65 review review malicious 0.628
+66 benign benign malicious 0.643
+67 malicious malicious malicious 0.643
+68 malicious malicious malicious 0.616
+69 review review malicious 0.655
+70 benign benign malicious 0.62
+71 review review malicious 0.648
+72 malicious malicious malicious 0.636
+73 benign benign malicious 0.647
+74 malicious malicious malicious 0.688
+75 review review malicious 0.624
+76 benign benign malicious 0.635
+77 malicious malicious malicious 0.657
+78 malicious malicious malicious 0.634
+79 review review malicious 0.671
+80 benign benign malicious 0.621
+81 review review malicious 0.633
+82 malicious malicious malicious 0.64
+83 benign benign malicious 0.647
+84 malicious malicious malicious 0.627
+85 review review malicious 0.623
+86 benign benign malicious 0.64
+87 malicious malicious malicious 0.642
+88 malicious malicious malicious 0.637
+89 review review malicious 0.686
+90 benign benign malicious 0.622
+91 review review malicious 0.658
+92 malicious malicious malicious 0.647
+93 benign benign malicious 0.633
+94 malicious malicious malicious 0.621
+95 review review malicious 0.628
+96 benign benign malicious 0.649
+97 malicious malicious malicious 0.646
+98 malicious malicious malicious 0.63
+99 review review malicious 0.66
+100 benign benign malicious 0.633
+{
+  "n": 100,
+  "graph": {
+    "accuracy": 1.0,
+    "latency_mean_seconds": 0.009127569030000303,
+    "latency_median_seconds": 0.007369077000006996,
+    "latency_p95_seconds": 0.008031910999989123,
+    "confusion_matrix": {
+      "benign->benign": 30,
+      "malicious->malicious": 40,
+      "review->review": 30
+    }
+  },
+  "baseline": {
+    "accuracy": 0.4,
+    "latency_mean_seconds": 0.6409340708200023,
+    "latency_median_seconds": 0.63387067150002,
+    "latency_p95_seconds": 0.6710306649999893,
+    "confusion_matrix": {
+      "benign->malicious": 30,
+      "malicious->malicious": 40,
+      "review->malicious": 30
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.venv
+.git
+.cache
+__pycache__
+*.gguf
+enterprise-attack.json
+.env
